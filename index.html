@@ -9,18 +9,86 @@
 </head>
 <body class="bg-slate-50 min-h-screen text-slate-800">
 
-    <!-- Header -->
-    <header class="bg-indigo-700 text-white shadow-lg py-6 px-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">PD Digital Services</h1>
-                <p class="text-indigo-200 text-sm">CSC & Government Portal Service Desk</p>
+<!-- Header -->
+<header class="bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-900 text-white shadow-xl relative">
+    <!-- Top Announcement Banner -->
+    <div class="bg-indigo-950/60 border-b border-indigo-500/30 py-1.5 px-4 text-xs text-center text-indigo-200">
+        <i class="fa-solid fa-circle-info text-indigo-400 mr-1.5"></i>
+        <span>Select any service below to view required document checklists, eligibility, and processing timelines.</span>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 py-6">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            
+            <!-- Branding & Titles -->
+            <div class="space-y-1.5">
+                <div class="flex items-center gap-3">
+                    <div class="bg-white/10 p-2.5 rounded-xl border border-white/20 backdrop-blur-sm shadow-inner">
+                        <i class="fa-solid fa-laptop-file text-2xl text-indigo-200"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">PD Digital Services</h1>
+                        <p class="text-indigo-200 text-sm font-medium">Your Trusted Portal for Loans, Insurance, Investment, Taxation, RTO & Government Services</p>
+                    </div>
+                </div>
+                <p class="text-indigo-300 text-xs md:text-sm pl-0 lg:pl-14">
+                    Explore Services, Check Required Documents & Get Applied Online Instantly
+                </p>
             </div>
-            <button onclick="openAdminModal()" class="bg-indigo-800 hover:bg-indigo-900 px-4 py-2 rounded-lg text-sm font-medium transition">
-                <i class="fa-solid fa-lock mr-2"></i>Admin Edit
-            </button>
+
+            <!-- Quick Action & Contact Links Grid -->
+            <div class="flex flex-col sm:flex-row sm:items-center gap-3 border-t border-indigo-600/50 pt-4 lg:pt-0 lg:border-t-0">
+                
+                <!-- Contact & Location Pill Badges -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                    <!-- Phone Contact -->
+                    <a href="tel:+919712087970" class="flex items-center gap-2 bg-indigo-800/80 hover:bg-indigo-900 border border-indigo-500/40 px-3 py-2 rounded-lg transition group">
+                        <i class="fa-solid fa-phone text-emerald-400 group-hover:scale-110 transition"></i>
+                        <div>
+                            <span class="block text-[10px] text-indigo-300 uppercase tracking-wider font-semibold">Bhavinkumar Gohel</span>
+                            <span class="font-medium text-white">+91 97120 87970</span>
+                        </div>
+                    </a>
+
+                    <!-- Google Maps Location -->
+                    <a href="https://maps.app.goo.gl/8VMbxQmiiqqbtSxC6" target="_blank" class="flex items-center gap-2 bg-indigo-800/80 hover:bg-indigo-900 border border-indigo-500/40 px-3 py-2 rounded-lg transition group">
+                        <i class="fa-solid fa-location-dot text-rose-400 group-hover:scale-110 transition"></i>
+                        <div class="truncate max-w-[140px]">
+                            <span class="block text-[10px] text-indigo-300 uppercase tracking-wider font-semibold">Visit Store</span>
+                            <span class="font-medium text-white truncate block">Zundal, Gandhinagar, Gujarat 382421</span>
+                        </div>
+                    </a>
+
+                    <!-- Official Website Link -->
+                    <a href="https://bhavinkumargohel.github.io/BG/index.html" target="_blank" class="flex items-center gap-2 bg-indigo-800/80 hover:bg-indigo-900 border border-indigo-500/40 px-3 py-2 rounded-lg transition group">
+                        <i class="fa-solid fa-globe text-sky-400 group-hover:scale-110 transition"></i>
+                        <div class="truncate max-w-[140px]">
+                            <span class="block text-[10px] text-indigo-300 uppercase tracking-wider font-semibold">Official Web</span>
+                            <span class="font-medium text-white truncate block">https://bhavinkumargohel.github.io/BG/index.html</span>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp Quick Connect -->
+                    <a href="https://wa.me/919712087970" target="_blank" class="flex items-center gap-2 bg-emerald-700/80 hover:bg-emerald-800 border border-emerald-500/40 px-3 py-2 rounded-lg transition group">
+                        <i class="fa-brands fa-whatsapp text-white text-base group-hover:scale-110 transition"></i>
+                        <div>
+                            <span class="block text-[10px] text-emerald-200 uppercase tracking-wider font-semibold">WhatsApp</span>
+                            <span class="font-medium text-white">Chat Now</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Admin Button -->
+                <button onclick="openAdminModal()" title="Admin Control Panel" class="bg-indigo-950/80 hover:bg-slate-900 border border-indigo-400/30 text-indigo-200 hover:text-white px-3.5 py-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition shadow-md self-stretch sm:self-auto">
+                    <i class="fa-solid fa-lock text-indigo-400"></i>
+                    <span class="sm:hidden lg:inline">Admin</span>
+                </button>
+
+            </div>
+
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Main Content -->
     <main class="max-w-6xl mx-auto p-4 md:p-6">
