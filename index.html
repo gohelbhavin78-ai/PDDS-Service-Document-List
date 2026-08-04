@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD Digital Services Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-indigo-700 text-white shadow-lg py-6 px-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">PD Digital Services</h1>
+                <p class="text-indigo-200 text-sm">CSC & Government Portal Service Desk</p>
+            </div>
+            <button onclick="openAdminModal()" class="bg-indigo-800 hover:bg-indigo-900 px-4 py-2 rounded-lg text-sm font-medium transition">
+                <i class="fa-solid fa-lock mr-2"></i>Admin Edit
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto p-4 md:p-6">
+        
+        <!-- Search & Filter Bar -->
+        <div class="bg-white p-4 rounded-xl shadow-md mb-6 space-y-4 md:space-y-0 md:flex md:gap-4">
+            <div class="relative flex-1">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-slate-400"></i>
+                <input type="text" id="searchInput" onkeyup="filterServices()" placeholder="Search service or required document..." 
+                    class="w-full pl-10 pr-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <select id="categoryFilter" onchange="filterServices()" class="w-full md:w-64 py-2.5 px-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white">
+                <option value="ALL">All Categories</option>
+            </select>
+        </div>
+
+        <!-- Service Grid -->
+        <div id="serviceGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="col-span-full text-center py-12 text-slate-500">
+                <i class="fa-solid fa-spinner fa-spin text-3xl mb-2"></i>
+                <p>Loading services...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Service Detail Modal -->
+    <div id="detailModal" class="fixed inset-0 bg-slate-900/60 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('detailModal')" class="absolute right-4 top-4 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <h2 id="modalTitle" class="text-xl font-bold text-slate-900 mb-1"></h2>
+            <span id="modalCategory" class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2.5 py-1 rounded-full font-semibold mb-4"></span>
+            
+            <div class="space-y-4 text-sm">
+                <div>
+                    <h3 class="font-semibold text-slate-700 mb-1"><i class="fa-solid fa-file-lines text-indigo-600 mr-2"></i>Required Documents</h3>
+                    <p id="modalDocs" class="bg-slate-50 p-3 rounded-lg border text-slate-600 whitespace-pre-line"></p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-slate-700 mb-1"><i class="fa-solid fa-user-check text-indigo-600 mr-2"></i>Eligibility</h3>
+                    <p id="modalEligibility" class="text-slate-600"></p>
+                </div>
+                <div class="flex gap-4 pt-2 border-t">
+                    <div class="flex-1">
+                        <span class="text-xs text-slate-400 block">Processing Time</span>
+                        <span id="modalTime" class="font-medium text-slate-700"></span>
+                    </div>
+                    <div class="flex-1">
+                        <span class="text-xs text-slate-400 block">Estimated Fees</span>
+                        <span id="modalFee" class="font-medium text-slate-700"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Add Modal -->
+    <div id="adminModal" class="fixed inset-0 bg-slate-900/60 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative">
+            <button onclick="closeModal('adminModal')" class="absolute right-4 top-4 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <h2 class="text-xl font-bold text-slate-900 mb-4"><i class="fa-solid fa-lock text-indigo-600 mr-2"></i>Add New Service</h2>
+            
+            <form id="adminForm" onsubmit="submitNewService(event)" class="space-y-3 text-sm">
+                <input type="password" id="adminPassword" placeholder="Master Password" required class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-indigo-500">
+                <input type="text" id="addCategory" placeholder="Category (e.g. RTO Services)" required class="w-full p-2 border rounded-lg">
+                <input type="text" id="addName" placeholder="Service Name" required class="w-full p-2 border rounded-lg">
+                <textarea id="addDocs" placeholder="Required Documents (comma separated)" rows="3" required class="w-full p-2 border rounded-lg"></textarea>
+                <input type="text" id="addEligibility" placeholder="Eligibility Criteria" class="w-full p-2 border rounded-lg">
+                <div class="flex gap-2">
+                    <input type="text" id="addTime" placeholder="Proc. Time" class="w-1/2 p-2 border rounded-lg">
+                    <input type="text" id="addFee" placeholder="Fee Info" class="w-1/2 p-2 border rounded-lg">
+                </div>
+                <button type="submit" id="saveBtn" class="w-full bg-indigo-600 text-white py-2.5 rounded-lg font-medium hover:bg-indigo-700 transition">Save Service</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // REPLACE THIS WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
+        const API_URL = "https://script.google.com/macros/s/AKfycbycVboso19JF6-CqEsx-DoScUcaAyMgrOjAnntFqdHcb0K02l0ewKWY9dgxQIRU7nSBDA/exec";
+
+        let servicesData = [];
+
+        async function fetchServices() {
+            try {
+                const res = await fetch(API_URL);
+                servicesData = await res.json();
+                populateCategories();
+                renderServices(servicesData);
+            } catch (err) {
+                document.getElementById('serviceGrid').innerHTML = `
+                    <div class="col-span-full text-center py-12 text-red-500">
+                        Failed to load services. Please ensure your Google Apps Script URL is set correctly.
+                    </div>`;
+            }
+        }
+
+        function populateCategories() {
+            const categories = ['ALL', ...new Set(servicesData.map(s => s.category))];
+            const filter = document.getElementById('categoryFilter');
+            filter.innerHTML = categories.map(c => `<option value="${c}">${c}</option>`).join('');
+        }
+
+        function renderServices(data) {
+            const grid = document.getElementById('serviceGrid');
+            if (!data.length) {
+                grid.innerHTML = `<div class="col-span-full text-center py-12 text-slate-400">No matching services found.</div>`;
+                return;
+            }
+            grid.innerHTML = data.map(s => `
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">${s.category}</span>
+                        <h3 class="font-bold text-lg text-slate-800 mt-2">${s.service_name}</h3>
+                        <p class="text-slate-500 text-sm mt-2 line-clamp-2"><strong>Required:</strong> ${s.documents_required}</p>
+                    </div>
+                    <button onclick='openDetailModal(${JSON.stringify(s)})' class="mt-4 w-full bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-700 font-medium py-2 rounded-lg text-sm transition">
+                        View Documents & Details
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function filterServices() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const category = document.getElementById('categoryFilter').value;
+
+            const filtered = servicesData.filter(s => {
+                const matchesSearch = s.service_name.toLowerCase().includes(search) || 
+                                      s.documents_required.toLowerCase().includes(search);
+                const matchesCategory = category === 'ALL' || s.category === category;
+                return matchesSearch && matchesCategory;
+            });
+            renderServices(filtered);
+        }
+
+        function openDetailModal(s) {
+            document.getElementById('modalTitle').innerText = s.service_name;
+            document.getElementById('modalCategory').innerText = s.category;
+            document.getElementById('modalDocs').innerText = s.documents_required;
+            document.getElementById('modalEligibility').innerText = s.eligibility || 'N/A';
+            document.getElementById('modalTime').innerText = s.processing_time || 'N/A';
+            document.getElementById('modalFee').innerText = s.fee_info || 'N/A';
+            document.getElementById('detailModal').classList.remove('hidden');
+            document.getElementById('detailModal').classList.add('flex');
+        }
+
+        function openAdminModal() {
+            document.getElementById('adminModal').classList.remove('hidden');
+            document.getElementById('adminModal').classList.add('flex');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+            document.getElementById(id).classList.remove('flex');
+        }
+
+        async function submitNewService(e) {
+            e.preventDefault();
+            const btn = document.getElementById('saveBtn');
+            btn.innerText = "Saving...";
+            
+            const payload = {
+                action: "add",
+                password: document.getElementById('adminPassword').value,
+                category: document.getElementById('addCategory').value,
+                service_name: document.getElementById('addName').value,
+                documents_required: document.getElementById('addDocs').value,
+                eligibility: document.getElementById('addEligibility').value,
+                processing_time: document.getElementById('addTime').value,
+                fee_info: document.getElementById('addFee').value
+            };
+
+            const res = await fetch(API_URL, {
+                method: "POST",
+                body: JSON.stringify(payload)
+            });
+            const result = await res.json();
+            
+            alert(result.message);
+            if(result.status === "success") {
+                closeModal('adminModal');
+                fetchServices();
+            }
+            btn.innerText = "Save Service";
+        }
+
+        fetchServices();
+    </script>
+</body>
+</html>
