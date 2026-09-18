@@ -1,0 +1,450 @@
+{"data":[{
+  "id" : 1,
+  "category" : "Tax & Financial Services",
+  "service_name" : "CIBIL Report",
+  "documents_required" : "1. PAN Card 2. Aadhaar Card 3. Mobile Number linked with bank accounts",
+  "eligibility" : "Individuals evaluating credit score for loans or credit cards",
+  "processing_time" : "Instant PDF Report",
+  "fee_info" : "Report Fee + Processing"
+},
+{
+  "id" : 2,
+  "category" : "Tax & Financial Services",
+  "service_name" : "GST Registration",
+  "documents_required" : "1. PAN Card of Proprietor / Business 2. Aadhaar Card 3. Proof of Business Address (Electricity Bill / Rent Agreement / NOC) 4. Bank Account Details & Cancelled Cheque",
+  "eligibility" : "Businesses exceeding turnover threshold or undertaking inter-state sales",
+  "processing_time" : "3 to 7 Days",
+  "fee_info" : "Professional Service Fee"
+},
+{
+  "id" : 3,
+  "category" : "Tax & Financial Services",
+  "service_name" : "GST Return Filing",
+  "documents_required" : "1. Sales Invoices 2. Purchase Invoices & Expense Vouchers 3. GSTR Portal Login Credentials",
+  "eligibility" : "Registered GST taxpayers",
+  "processing_time" : "1 to 3 Days",
+  "fee_info" : "Professional Filing Fee"
+},
+{
+  "id" : 4,
+  "category" : "Tax & Financial Services",
+  "service_name" : "Income Tax Return Filing",
+  "documents_required" : "1. Form 16 / Salary Certificates 2. Bank Statements (All accounts) 3. Investment Proofs (80C, 80D, NPS, LIC) 4. PAN & Aadhaar Card",
+  "eligibility" : "Individuals, Salaried employees, and Business owners with taxable income",
+  "processing_time" : "2 to 5 Days",
+  "fee_info" : "Filing Service Fee"
+},
+{
+  "id" : 5,
+  "category" : "Tax & Financial Services",
+  "service_name" : "MSME/Udyam Registration",
+  "documents_required" : "1. Aadhaar Card of Entrepreneur 2. PAN Card 3. Bank Details 4. Business Name, incorporation date & Investment Details 5. Mobile Number and Email ID 6. Business address with Pincode 7. Orginization type (Sole propritor or LLP or Partnership Firm) 8. Nature of Business and Work",
+  "eligibility" : "Micro, Small, and Medium Enterprises",
+  "processing_time" : "1 to 2 Days",
+  "fee_info" : "Free Govt Service / Processing Charge"
+},
+{
+  "id" : 6,
+  "category" : "Tax & Financial Services",
+  "service_name" : "Trade License Assistance",
+  "documents_required" : "1. ID & Address Proof of Owner 2. Property Tax Receipt / Rent Agreement 3. Business Premises Layout / NOC",
+  "eligibility" : "Commercial trade establishments operating within municipal limits",
+  "processing_time" : "10 to 25 Days",
+  "fee_info" : "Municipal Fee + Processing"
+},
+{
+  "id" : 7,
+  "category" : "Passport Services",
+  "service_name" : "Passport Application",
+  "documents_required" : "1. Proof of DOB (Aadhaar / Birth Certificate / 10th Certificate / PAN Card / DL ) 2. Proof of Address (Aadhaar / Bank Passbook / Electricity Bill / Voter ID) 3. Proof of Non-ECR Status (10th Pass Certificate or higher degree) 4. Marriage Certificate 5. Mobile Number and Email ID 6. Emergency Contact Details: Person Name, Address, Mobile Number and Email ID",
+  "eligibility" : "Indian Citizens (Fresh passport applicants)",
+  "processing_time" : "15 to 30 Days (Normal) / 3-7 Days (Tatkaal)",
+  "fee_info" : "Govt Passport Fee + Service Fee"
+},
+{
+  "id" : 8,
+  "category" : "Passport Services",
+  "service_name" : "Passport Appointment Booking",
+  "documents_required" : "1. Passport Application Reference Number (ARN) 2. Applicant Personal & Contact Details",
+  "eligibility" : "Applicants who have submitted online passport forms",
+  "processing_time" : "Instant (Slot Dependent)",
+  "fee_info" : "Service Charge"
+},
+{
+  "id" : 9,
+  "category" : "Passport Services",
+  "service_name" : "Passport Document Assistance",
+  "documents_required" : "1. Existing Personal Certificates / ID Proofs 2. Annexures / Affidavit drafts where applicable",
+  "eligibility" : "Applicants requiring document verification and annexure drafting",
+  "processing_time" : "1 to 2 Days",
+  "fee_info" : "Consultation / Service Fee"
+},
+{
+  "id" : 10,
+  "category" : "Passport Services",
+  "service_name" : "Passport Renewal",
+  "documents_required" : "1. Old Original Passport 2. Self-attested copies of first 2 and last 2 pages 3. Proof of Address (if address changed) 4. Proof of Non-ECR status 5. Mobile Number and Email ID",
+  "eligibility" : "Existing passport holders whose passport is expiring or expired",
+  "processing_time" : "10 to 20 Days",
+  "fee_info" : "Govt Passport Fee + Service Fee"
+},
+{
+  "id" : 11,
+  "category" : "Loans",
+  "service_name" : "Business Loan",
+  "documents_required" : "1. KYC Documents: PAN, Aadhaar, Passport, and photographs. 2. Income Proof: Audited financial statements and ITRs for the past 3 years (Self-Employed). 3. CIBIL Report",
+  "eligibility" : "Business Owner",
+  "processing_time" : "7 to 20 working days",
+  "fee_info" : "As per Bank norms"
+},
+{
+  "id" : 12,
+  "category" : "Loans",
+  "service_name" : "Car / Auto Loan (Secured)",
+  "documents_required" : "1. KYC & Identity Proof: PAN, Aadhaar, Voter ID, or Passport. 2. Address Proof: Recent utility bill or bank statement. 3. Income Proof: Last 3 months' salary slips and 6 months' bank statements; or last 2 years' ITR for business owners. 4. Vehicle Proforma Invoice: Quote/invoice provided by the auto dealership. 5. CIBIL Report",
+  "eligibility" : "Individual",
+  "processing_time" : "24 to 48 hours (often finalized directly via dealership tie-ins)",
+  "fee_info" : "As per Bank norms"
+},
+{
+  "id" : 13,
+  "category" : "Loans",
+  "service_name" : "Education Loan",
+  "documents_required" : "1. Academic Records: Marksheets from 10th standard onwards, graduation degrees, and entrance exam scorecards (GRE, GMAT, IELTS, etc.). 2. Admission Proof: Acceptance letter/offer letter from the recognized university or institution. 3. Cost Estimate: Fee structure breakdown provided by the university. 4. Financial & KYC Proof of Co-applicant: Income documents (salary slips/ITR) and asset documents (if security/collateral is pledged for high-value loans). 5. CIBIL Report",
+  "eligibility" : "Student",
+  "processing_time" : "7 to 20 working days",
+  "fee_info" : "As per Bank norms"
+},
+{
+  "id" : 14,
+  "category" : "Loans",
+  "service_name" : "Home Loan / Mortgage Loan",
+  "documents_required" : "1. KYC Documents: PAN, Aadhaar, Passport, and photographs. 2. Income Proof: Salary slips/Form 16 (Salaried) or audited financial statements and ITRs for the past 3 years (Self-Employed). 3. Property Documents: Title deed, Property Masterfile, approved building plan, sale agreement, allotment letter, BU certificate, and up-to-date property tax receipts. 4. CIBIL Report",
+  "eligibility" : "Property Owner",
+  "processing_time" : "7 to 15 working days (depends on technical and legal verification of the property)",
+  "fee_info" : "As per Bank norms"
+},
+{
+  "id" : 15,
+  "category" : "Investment",
+  "service_name" : "Corporate Bonds",
+  "documents_required" : "1. PAN Card (Mandatory). 2. Address Proof & Identity Proof: Aadhaar, Passport, Voter ID, or Driving Licence. 3. Active Demat Account / Bank Account Details: Most retail corporate and government bonds are issued and held in dematerialized form (or Bond Ledger Account for RBI bonds) linked to a verified bank account.",
+  "eligibility" : "Individual",
+  "processing_time" : "2 working days",
+  "fee_info" : "Platform / Brokerage Fees"
+},
+{
+  "id" : 16,
+  "category" : "Investment",
+  "service_name" : "Demat Account",
+  "documents_required" : "1. PAN Card (Mandatory for all applicants). Identity Proof: Aadhaar Card, Voter ID, Passport, or Driving Licence. Address Proof: Aadhaar, Passport, recent utility bill (not older than 3 months), or bank statement. 2. Bank Account Proof: Cancelled cheque, bank passbook copy, or latest bank statement. 3. Income Proof: Required only if trading in Derivatives/F&O (e.g., last 6 months' bank statement, salary slips, ITR acknowledgement). 4. Passport-size photograph and signature copy.",
+  "eligibility" : "Individual",
+  "processing_time" : "1 to 3 working days for digital e-KYC verification; physical/offline applications may take up to 5–7 working days.",
+  "fee_info" : "Zero Account Opening Fee"
+},
+{
+  "id" : 17,
+  "category" : "Investment",
+  "service_name" : "Mutual Fund",
+  "documents_required" : "1. KYC (Know Your Customer): PAN Card, Aadhaar Card (or valid Passport/Voter ID), and a passport-sized photograph. (In-Person Verification or Video KYC is mandatory). 2. Financial Proof / Bank Details: Cancelled cheque leaf or bank statement/passbook copy showing your name and MICR/IFSC code (for auto-debits and redemptions).",
+  "eligibility" : "Individual",
+  "processing_time" : "Typically 1 to 2 business days",
+  "fee_info" : "Expense Ratio as per AMC"
+},
+{
+  "id" : 18,
+  "category" : "Insurance",
+  "service_name" : "Health Insurance",
+  "documents_required" : "1. Pre existing disease details (If Any) 2. Date of Birth of Insured member 3. Sum Insured 4. Pincode 5. Previous Health Policy Copy (if Any,)",
+  "eligibility" : "All Indian Citizens",
+  "processing_time" : "2 to 3 Days",
+  "fee_info" : "As per Insurance Company norms"
+},
+{
+  "id" : 19,
+  "category" : "Insurance",
+  "service_name" : "Motor Insurance",
+  "documents_required" : "1. Previous Insurance Policy Copy 2. RC Copy 3. PAN Card & Aadhaar Card 4. Previous Year Claim Details (if Any,) 5. Recent Ownership change (if any) 6. Mobile number and Email ID",
+  "eligibility" : "Vehicle with Fitness certificate and valid PUC",
+  "processing_time" : "2 to 3 Days",
+  "fee_info" : "As per Insurance Company norms"
+},
+{
+  "id" : 20,
+  "category" : "Insurance",
+  "service_name" : "Term Insurance",
+  "documents_required" : "1. Pre existing disease details (If Any) 2. Date of Birth 3. Sum Insured, Payment Term, Policy Term 4. Pincode 5. Smoking/Tobacco 6. Gender 7. Education 8. Income 9. Occupation",
+  "eligibility" : "All Indian Citizens",
+  "processing_time" : "2 to 3 Days",
+  "fee_info" : "As per Insurance Company norms"
+},
+{
+  "id" : 21,
+  "category" : "Identity Card Services",
+  "service_name" : "Aadhaar Mobile & Address Update (where available)",
+  "documents_required" : "1. For Address: Utility Bill / Ration Card / Bank Statement / Marriage Certificate 2. For Mobile: Active mobile phone for OTP authentication",
+  "eligibility" : "Existing Aadhaar holders needing updated phone or residence details",
+  "processing_time" : "3 to 15 Days",
+  "fee_info" : "UIDAI Fixed Fee"
+},
+{
+  "id" : 22,
+  "category" : "Identity Card Services",
+  "service_name" : "Aadhaar Update",
+  "documents_required" : "1. Existing Aadhaar Card Number 2. Supporting Document for Change (Valid POI / POA / POB list as per UIDAI norms) 3. Aadhaar Linked Mobile Number",
+  "eligibility" : "All existing Aadhaar cardholders requiring demographic update",
+  "processing_time" : "7 to 30 Days",
+  "fee_info" : "UIDAI Fixed Fee"
+},
+{
+  "id" : 23,
+  "category" : "Identity Card Services",
+  "service_name" : "Instant e-PAN",
+  "documents_required" : "1. Aadhaar Card (Must have active linked Mobile Number)",
+  "eligibility" : "Adult Indian citizens who have never been allotted a PAN card before",
+  "processing_time" : "10 minutes (Instant PDF)",
+  "fee_info" : "Nominal Service Charge"
+},
+{
+  "id" : 24,
+  "category" : "Identity Card Services",
+  "service_name" : "PAN Card (New)",
+  "documents_required" : "1. Proof of Identity (Aadhaar Card / Voter ID / Passport) 2. Proof of Address (Aadhaar Card / Bank Passbook / Electricity Bill) 3. Proof of Date of Birth (Birth Cert / Marksheet) 4. Recent Passport Size Photographs 5. Singnature Photo 6. Aadhaar Linked Mobile Number and Email ID",
+  "eligibility" : "All Indian Citizens (Individuals, Minors, Companies)",
+  "processing_time" : "7 to 15 Days",
+  "fee_info" : "Govt Fee + Processing"
+},
+{
+  "id" : 25,
+  "category" : "Identity Card Services",
+  "service_name" : "PAN Card Correction",
+  "documents_required" : "1. Existing PAN Card Copy 2. Aadhaar Card 3. Proof of DOB (Voter ID / DL/ Marksheet/ Marriage Certificate / Birth Certificate etc.) 4. Recent Passport Size Photographs 5. Singnature Photo 6. Aadhaar Linked Mobile Number and Email ID",
+  "eligibility" : "Existing PAN cardholders requiring name, DOB, photo, or signature correction",
+  "processing_time" : "10 to 20 Days",
+  "fee_info" : "Govt Fee + Processing"
+},
+{
+  "id" : 36,
+  "category" : "Identity Card Services",
+  "service_name" : "PVC Aadhaar Assistance",
+  "documents_required" : "1. Aadhaar Card Number or Enrollment ID 2. Mobile Number for OTP",
+  "eligibility" : "Any Aadhaar holder wanting durable PVC plastic card",
+  "processing_time" : "7 to 15 Days (Delivered by Speed Post)",
+  "fee_info" : "Rs. 50 UIDAI Fee + Service Fee"
+},
+{
+  "id" : 37,
+  "category" : "Identity Card Services",
+  "service_name" : "Voter ID Correction",
+  "documents_required" : "1. Existing EPIC (Voter ID) Number 2. Valid Supporting Proof for Correction (Aadhaar / Passport / School Certificate) 3. Passport Photograph",
+  "eligibility" : "Registered voters requiring correction in name, photo, age, or address",
+  "processing_time" : "15 to 30 Days",
+  "fee_info" : "Nominal Service Charge"
+},
+{
+  "id" : 38,
+  "category" : "Identity Card Services",
+  "service_name" : "Voter ID Registration",
+  "documents_required" : "1. Proof of Age (Birth Certificate / Aadhaar / Passport) 2. Proof of Residence (Ration Card / Rent Agreement / Electricity Bill) 3. Passport Size Photograph",
+  "eligibility" : "Indian citizens aged 18 years or above as of qualifying date",
+  "processing_time" : "15 to 45 Days",
+  "fee_info" : "Free Govt Service / Processing Charge"
+},
+{
+  "id" : 42,
+  "category" : "Digital Services",
+  "service_name" : "ABHA Health Card",
+  "documents_required" : "1. Aadhaar Card 2. Mobile Number for OTP",
+  "eligibility" : "All Indian Citizens",
+  "processing_time" : "Instant Download",
+  "fee_info" : "Free / Service Charge"
+},
+{
+  "id" : 45,
+  "category" : "Digital Services",
+  "service_name" : "DigiLocker Assistance",
+  "documents_required" : "1. Aadhaar Card 2. Mobile Number registered with Aadhaar",
+  "eligibility" : "All citizens holding valid Aadhaar card",
+  "processing_time" : "Instant",
+  "fee_info" : "Service Charge"
+},
+{
+  "id" : 49,
+  "category" : "Digital Services",
+  "service_name" : "E-Shram Card",
+  "documents_required" : "1. Aadhaar Card 2. Bank Account Details 3. Mobile Number linked with Aadhaar",
+  "eligibility" : "Unorganized workers aged between 16 and 59 years",
+  "processing_time" : "Instant Download",
+  "fee_info" : "Free / Nominal CSC Charge"
+},
+{
+  "id" : 50,
+  "category" : "Digital Services",
+  "service_name" : "Labour Card",
+  "documents_required" : "1. Certificate of 90 days construction work 2. Aadhaar Card 3. Bank Passbook 4. Passport Photos",
+  "eligibility" : "Construction and manual workers in unorganized sector",
+  "processing_time" : "15 to 30 Days",
+  "fee_info" : "Govt Fee + Processing"
+},
+{
+  "id" : 51,
+  "category" : "Digital Services",
+  "service_name" : "Online Government Form Filling",
+  "documents_required" : "1. Educational Marksheets 2. ID & Address Proofs 3. Photo & Signature Scan Copy",
+  "eligibility" : "Applicants meeting specific exam or scheme criteria",
+  "processing_time" : "Same Day / Immediate",
+  "fee_info" : "Exam Fee + Form Filling Charge"
+},
+{
+  "id" : 52,
+  "category" : "Digital Services",
+  "service_name" : "Property Tax Bill Name Change/Transfer",
+  "documents_required" : "1. Aadhaar Card/PAN Card/Voter ID Card 2. Index Copy 3. Scan Copy of Dastavage/Sale Deed 4. Latest Electricity Bill 5. Recent Property Tax Bill payment receipt 6. Aadhaar Linked Mobile Number and Email ID",
+  "eligibility" : "Property Owner",
+  "processing_time" : "45 to 90 Days",
+  "fee_info" : "As per AMC/GMC norms"
+},
+{
+  "id" : 53,
+  "category" : "Digital Services",
+  "service_name" : "Railway Ticket Booking",
+  "documents_required" : "1. Passenger Names, Ages, and Gender 2. Travel Date and Route Details 3. ID Proof for Travel (Aadhaar / Voter ID)",
+  "eligibility" : "All travelers",
+  "processing_time" : "Instant Ticket Confirmation",
+  "fee_info" : "IRCTC Ticket Fare + Service Surcharge"
+},
+{
+  "id" : 54,
+  "category" : "Digital Services",
+  "service_name" : "UGVCL BILL Name Change",
+  "documents_required" : "1. Aadhaar Card 2. Index Copy 3. Recent Passport Size Photo 4. Singnature Photo 5. Aadhaar Linked Mobile Number 6. Old Consumner Concent for Deposit Transfer 7. Parterner Concent for Name Change (in case of Joint property)",
+  "eligibility" : "UGVCL Bill",
+  "processing_time" : "7 to 15 Days",
+  "fee_info" : "UGVCL Name change Fees + Processing Fees"
+},
+{
+  "id" : 55,
+  "category" : "Digital Services",
+  "service_name" : "Utility Bill Payment",
+  "documents_required" : "1. Consumer Number / Bill Copy 2. Mobile Number",
+  "eligibility" : "Electricity, Water, Gas consumer account holders",
+  "processing_time" : "Instant Confirmation",
+  "fee_info" : "Bill Amount + Nominal Surcharge"
+},
+{
+  "id" : 56,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Address Change in RC",
+  "documents_required" : "1. Form 33 2. Original RC 3. Proof of New Address (Aadhaar / Passport / Utility Bill) 4. Valid Insurance & PUC 5. NOC from Lender (if under loan)",
+  "eligibility" : "Registered vehicle owner moving to a new residential address",
+  "processing_time" : "15 to 30 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 57,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Driving Licence (New)",
+  "documents_required" : "1. Learner Licence Number 2. Recent Passport Size Photographs 3. Singnature Photo 4. Address Proof (Aadhaar Card / Voter ID / Passport) 5. Proof of Date of Birth",
+  "eligibility" : "Age 18+ (16+ for gearless motor cycle), holds valid Learner Licence for at least 30 days",
+  "processing_time" : "15 to 30 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 58,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Driving Licence Renewal",
+  "documents_required" : "1. Original Driving Licence 2. Recent Passport Size Photographs 3. Singnature Photo 4. Proof of Address 5. Form 1A (Medical Certificate for applicants aged 40+ or commercial licence)",
+  "eligibility" : "Existing Driving Licence expired or expiring within 1 year",
+  "processing_time" : "7 to 15 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 59,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Duplicate Driving Licence",
+  "documents_required" : "1. FIR / Non-Traceable Report from Police (if lost) 2. Damaged Original DL (if mutilated) 3. LLD Application Form 4. Proof of Address & ID 5. Recent Passport Size Photographs 6. Singnature Photo",
+  "eligibility" : "Valid Driving Licence holders whose licence is lost, stolen, or damaged",
+  "processing_time" : "7 to 15 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 60,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Fitness Certificate",
+  "documents_required" : "1. Form 38 2. Original RC 3. Valid Insurance Certificate 4. Tax Payment Receipt 5. PUC Certificate",
+  "eligibility" : "Commercial vehicle owners or private vehicles older than 15 years",
+  "processing_time" : "1 to 5 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 70,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "International Driving Permit",
+  "documents_required" : "1. Valid Driving Licence 2. Valid Indian Passport with Visa 3. Air Tickets 4. Form 1A (Medical Certificate) 5. Passport Size Photographs (5 copies)",
+  "eligibility" : "Indian citizens holding a valid Indian Driving Licence & Passport",
+  "processing_time" : "2 to 7 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 71,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Learning Licence",
+  "documents_required" : "1. Proof of Date of Birth (Birth Certificate / School Leaving Certificate) 2. Proof of Address (Aadhaar Card / Voter ID / Utility Bill) 3. Recent Passport Size Photographs 4. Singnature Photo 5. Form 1 (Self Declaration of Physical Fitness)",
+  "eligibility" : "Age 18+ (16+ for gearless 50cc motorcycle with parental consent)",
+  "processing_time" : "1 to 3 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 72,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "RC Book Services",
+  "documents_required" : "1. Original RC / Damaged RC 2. Valid Insurance Certificate 3. PUC Certificate 4. Owner ID Proof 5. Police FIR (if lost)",
+  "eligibility" : "Registered vehicle owner requiring RC renewal, duplicate, or smart card conversion",
+  "processing_time" : "7 to 20 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 73,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Traffic e-Challan Payment",
+  "documents_required" : "1. Vehicle Number / Challan Number 2. Driving Licence Number (optional)",
+  "eligibility" : "Vehicle owners or drivers with pending e-Challan notices",
+  "processing_time" : "Instant",
+  "fee_info" : "Challan Fine Amount"
+},
+{
+  "id" : 74,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Vehicle Insurance Assistance",
+  "documents_required" : "1. Previous Insurance Policy Copy 2. RC Book Copy 3. ID Proof of Vehicle Owner - PAN Card 4. Aadhaar Card 5. Mobile Number & Email ID 6. Ownership Change (If any)",
+  "eligibility" : "All vehicle owners requiring 1st party or 3rd party motor insurance",
+  "processing_time" : "Same Day / Instant",
+  "fee_info" : "As per Insurer Premium"
+},
+{
+  "id" : 75,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Vehicle Ownership Transfer",
+  "documents_required" : "1. Form 29 & Form 30 2. Original RC 3. Valid Insurance & PUC 4. Buyer & Seller ID/Address Proofs 5. NOC from Financier (if financed) 6. Passport Photographs of buyer",
+  "eligibility" : "Buyer & Seller of a registered motor vehicle",
+  "processing_time" : "15 to 30 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 76,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Vehicle Registration Services",
+  "documents_required" : "1. Sale Certificate (Form 21) 2. Roadworthiness Certificate (Form 22) 3. Valid Vehicle Insurance Policy 4. Proof of Address 5. Valid ID Proof",
+  "eligibility" : "Owner of a newly purchased vehicle",
+  "processing_time" : "7 to 15 Days",
+  "fee_info" : "As per RTO Norms"
+},
+{
+  "id" : 77,
+  "category" : "RTO & Vehicle Services",
+  "service_name" : "Vehicle Tax Payment",
+  "documents_required" : "1. Vehicle Registration Number 2. Previous Tax Receipt / RC Details 3. Insurance & PUC",
+  "eligibility" : "Vehicle owners owing state motor vehicle taxes",
+  "processing_time" : "Same Day / Instant",
+  "fee_info" : "State Govt Applicable Tax"
+}]}
